@@ -1,0 +1,378 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+section.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C0B0D;
+    padding: 8px 96px;
+    height: 44px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.logo-narasi {
+    display: grid;
+    place-items: center;
+}
+
+div.right-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 44px;
+    gap: 16px;
+}
+
+div.search-bar {
+    position: relative;
+    background-color: white;
+    height: 32px;
+    border-radius: 0.25rem;
+    width: 300px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+img.search-icon {
+    position: absolute;
+    margin-left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div p.placeholder {
+    color: #9E9E9E;
+    font-size: 12px;
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.login-btn {
+    color: #FFE900;
+    font-size: 12px;
+    border: 2px solid #FFE900;
+    padding: 8px 16px;
+    border-radius: 0.25rem;
+}
+
+nav.navbar-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #4A25AA;
+    padding: 0px 96px;
+    height: 44px;
+    font-family: 'Roboto', sans-serif;
+    gap: 16px;
+    color: #9F8CD0;
+}
+
+nav.navbar-section span {
+    font-weight: 700;
+}
+
+section.banner-section {
+    background-color: #0C0B0D;
+}
+
+section.banner-section img {
+    width: 100%;
+}
+
+section.buka_mata-section {
+    padding: 0px 96px;
+    color: #FFE900;
+    background-color: #0C0B0D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 32px;
+}
+
+section.buka_mata-section p.judul-artikel {
+    font-size: 32px;
+    font-weight: 500;
+    color: #FAFAFA;
+    line-height: 48px;
+}
+
+section.buka_mata-section p.tanggal-artikel {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+section.buka_mata-section div.video-wrapper {
+    display: flex;
+    margin-top: 24px;
+    gap: 16px;
+}
+
+section.buka_mata-section div.video-wrapper div.video-card {
+    display: flex;
+    flex-direction: column;
+}
+
+section.buka_mata-section div.video-wrapper div.video-card img {
+    border-radius: 0.375rem;
+}
+
+section.buka_mata-section div.video-wrapper div.video-card span.author {
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFE900;
+    margin-top: 12px;
+}
+
+section.buka_mata-section div.video-wrapper div.video-card p.judul-artikel {
+    color: #FAFAFA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+section.buka_mata-section div.video-wrapper div.video-card span.tanggal-video {
+    font-size: 12px;
+    color: #BDBDBD;
+    margin-top: 4px;
+}
+
+section.artikel-section {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding: 48px 96px;
+}
+
+section.artikel-section div.see_all {
+    color: #4A25AA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+section.artikel-section div.see_all span.title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+}
+
+section.artikel-section div.see_all span.lihat_semua {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+section.artikel-section div.artikel-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-thumbnail {
+    position: relative;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-thumbnail div.text-overlay {
+    position: absolute;
+    bottom: 12px;
+    width: 416px;
+    height: 30%;
+    left: 0;
+    right: 0;
+    text-align: start;
+    color: white;
+    background-color: rgba(12, 11, 13, 0.5);
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-thumbnail div.text-overlay h2.author {
+    color: #FFE900;
+    font-size: 16px;
+    margin-left: 24px;
+    margin-top: 16px;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-thumbnail div.text-overlay p {
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #F4F4F4;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-container {
+    display: flex;
+    flex-direction: column;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-container div.artikel {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-container div.artikel img {
+    width: 100px;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-container div.artikel div.title-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-container div.artikel div.title-wrapper span.author {
+    color: #4A25AA;
+    font-size: 11px;
+}
+
+section.artikel-section div.artikel-wrapper div.artikel-container div.artikel div.title-wrapper span.title {
+    color: #0C0B0D;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+section.populer-section {
+    padding: 0px 96px;
+}
+
+section.populer-section div.container {
+    background-color: #DDDDDD;
+    width: 100%;
+    display: flex;
+    padding: 24px 16px;
+    gap: 24px;
+}
+
+section.populer-section div.container div.left-item {
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.populer-section div.container div.left-item div.see_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
+
+section.populer-section div.container div.left-item div.see_all span.lihat_semua {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+section.populer-section div.container div.left-item div.see_all span.title-video {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+}
+
+section.populer-section div.container div.left-item div.thumbnail {
+    display: flex;
+    gap: 16px;
+}
+
+section.populer-section div.container div.left-item div.thumbnail div.video-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+section.populer-section div.container div.left-item div.thumbnail div.video-title p.title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    line-height: 21px;
+}
+
+section.populer-section div.container div.left-item div.thumbnail div.video-title p.sub-title {
+    color: #717171;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+section.populer-section div.container div.left-item div.list-video-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+    gap: 16px;
+}
+
+section.populer-section div.container div.left-item div.list-video-wrapper div.list-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.populer-section div.container div.left-item div.list-video-wrapper div.list-left div.item-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #A4A4A4;
+    padding-bottom: 16px;
+    padding-top: 24px;
+}
+
+section.populer-section div.container div.left-item div.list-video-wrapper div.list-left div.item-left p.title {
+    font-size: 14px;
+    color: #000000;
+}
+
+section.populer-section div.container div.right-item {
+    width: 50%;
+}
