@@ -101,6 +101,7 @@ div.login-btn {
     border: 2px solid #FFE900;
     padding: 8px 16px;
     border-radius: 0.25rem;
+    cursor: pointer;
 }
 
 nav.navbar-section {
@@ -111,7 +112,7 @@ nav.navbar-section {
     padding: 0px 96px;
     height: 44px;
     font-family: 'Roboto', sans-serif;
-    gap: 16px;
+    gap: 44px;
     color: #9F8CD0;
 }
 
@@ -671,4 +672,113 @@ section.copyright {
     font-weight: 500;
     font-size: 10px;
     color: white;
+}
+
+section.login-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+section.login-section div.pic-login {
+    width: 50%;
+    /* background-color: salmon; */
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background-color: #4A25AA;
+    /* height: 500px; */
+}
+
+section.login-section div.login-form {
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+section.login-section div.login-form p.top-text {
+    font-size: 24px;
+    color: #4A25AA;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+section.login-section div.login-form p.signup {
+    font-weight: 400;
+    font-weight: 12px;
+}
+
+section.login-section div.login-form p.signup span {
+    font-weight: 700;
+    color: #4A25AA;
+}
+
+section.login-section div.login-form div.email {
+    width: 100%;
+    background-color: #4A25AA;
+    color: white;
+    text-align: center;
+    padding: 16px 0px;
+    border-radius: 0.25rem;
+    margin-top: 16px;
+}
+
+section.login-section div.login-form div.atau {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+section.login-section div.login-form div.atau div.left-line {
+    background-color: #616161;
+    height: 1px;
+    border-radius: 0.25rem;
+    flex: 1;
+    align-self: center;
+}
+
+section.login-section div.login-form div.atau div.right-line {
+    background-color: #616161;
+    height: 1px;
+    border-radius: 0.25rem;
+    flex: 1;
+    align-self: center;
+}
+
+section.login-section div.login-form div.fb {
+    width: 100%;
+    background-color: #4766AF;
+    color: white;
+    text-align: center;
+    padding: 16px 0px;
+    border-radius: 0.25rem;
+    margin-top: 16px;
+    position: relative;
+}
+
+section.login-section div.login-form div.fb img {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.login-section div.login-form div.google {
+    width: 100%;
+    background-color: #4E83EF;
+    color: white;
+    text-align: center;
+    padding: 16px 0px;
+    border-radius: 0.25rem;
+    margin-top: 16px;
+    position: relative;
+}
+
+section.login-section div.login-form div.google img {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
 }
