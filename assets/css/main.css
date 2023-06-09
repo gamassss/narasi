@@ -782,3 +782,95 @@ section.login-section div.login-form div.google img {
     top: 50%;
     transform: translateY(-50%);
 }
+
+section.ruang-section {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding: 48px 96px;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%; */
+}
+
+section.ruang-section div.see_all {
+    color: #4A25AA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+section.ruang-section div.see_all span.title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+}
+
+section.ruang-section div.see_all span.lihat_semua {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+section.ruang-section div.ruang-container {
+    display: grid;
+    gap: 16px;
+    row-gap: 40px;
+    column-gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+section.ruang-section div.ruang-items {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    border-radius: 1.5rem;
+    /* filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); */
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+section.ruang-section div.ruang-items div.deskripsi {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    padding: 24px 32px;
+}
+
+section.ruang-section div.ruang-items div.deskripsi img {
+    position: absolute;
+    right: 50%;
+    top: -16%;
+    transform: translateY(50px);
+    transform: translateX(50%);
+}
+
+section.ruang-section div.ruang-items div.deskripsi p.ruang-title {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4A25AA;
+}
+
+section.ruang-section div.ruang-items div.deskripsi p.desc {
+    text-align: center;
+    font-weight: normal;
+    color: #051C2C;
+}
+
+section.ruang-section div.ruang-items div.deskripsi div.join-btn {
+    background-color: #4A25AA;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-weight: normal;
+}
