@@ -1016,3 +1016,113 @@ button.see_more {
     cursor: pointer;
 }
 
+section.program_detail-section {
+    /* background-color: #FFFFFF; */
+    font-family: 'Roboto', sans-serif;
+    padding: 48px 96px;
+}
+
+section.program_detail-section div.deskripsi-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+section.program_detail-section div.deskripsi-container img {
+    border-radius: 120px;
+    height: 60px;
+}
+
+section.program_detail-section div.deskripsi-container div.title_desc {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+section.program_detail-section div.deskripsi-container div.title_desc p.title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #212529;
+}
+
+section.program_detail-section div.deskripsi-container div.title_desc p.desc {
+    font-weight: normal;
+    font-size: 16px;
+    color: #616161;
+}
+
+nav.program_detail-nav {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 96px;
+    padding-bottom: 16px;
+    /* width: 100%;
+    color: #9E9E9E;
+    display: flex;
+    gap: 36px;
+    padding-top: 12px 0px; */
+}
+
+nav.program_detail-nav div.nav-container  {
+    width: 100%;
+    color: #9E9E9E;
+    display: flex;
+    gap: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    /* padding-top: 12px; */
+    /* padding-bottom: 12px; */
+    border-bottom: 2px solid #E0E0E0;
+}
+
+nav.program_detail-nav div.nav-container span {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+nav.program_detail-nav div.nav-container span.active-nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #4A25AA;
+}
+
+section.page-nav {
+    font-family: 'Roboto', sans-serif;
+    padding: 64px 96px;
+    padding-top: 0px;
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+    align-items: center;
+}
+
+section.page-nav div {
+    width: 25px;
+    height: 25px;
+    background-color: #E0E0E0;
+    color: #757575;
+    font-size: 12px;
+    border-radius: 50px;
+    display: grid;
+    place-items: center;
+}
+
+section.page-nav span {
+    color: #212529;
+    font-size: 12px;
+}
+
+section.page-nav div.active {
+    background-color: #4A25AA;
+    color: #FAFAFA;
+}
+
+
+
