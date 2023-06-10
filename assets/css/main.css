@@ -547,10 +547,16 @@ section.academy-section div.card-container {
     overflow: auto;
 }
 
+section.academy-section div.card-container::-webkit-scrollbar {
+    display: none;
+}
+
 section.academy-section div.card-container div.card {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.375rem;
     overflow: hidden;
+    min-width: 356px;
+    max-width: 356px;
 }
 
 section.academy-section div.card-container div.card div.card-body{
@@ -573,6 +579,12 @@ section.academy-section div.card-container div.card div.card-body p.title {
     font-size: 16px;
     color: #0C0B0D;
     margin-top: 20px;
+}
+
+section.academy-section div.card-container div.card div.card-body p.desc {
+    color: #616161;
+    margin-top: 12px;
+    font-size: 12px;
 }
 
 section.academy-section div.card-container div.card div.card-body div.kelas_online {
@@ -660,6 +672,7 @@ section.sponsor p.our_partner {
 section.sponsor div.logo {
     display: flex;
     align-items: start;
+    gap: 12px;
     justify-content: center;
 }
 
@@ -1132,9 +1145,6 @@ div.container-konten {
     margin-bottom: 128px;
 }
 
-article.artikel-section {
-    /* background-color: salmon; */
-}
 
 article.artikel-section p.kategori {
     font-size: 12px;
@@ -1447,4 +1457,265 @@ div.container-konten div.right-section div.populer-video div.deskripsi-video p.a
     color: #4A25AA;
     font-size: 12px;
 }
+
+section.hero-section {
+    padding: 32px 96px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+section.hero-section div.text {
+    padding-right: 128px;
+}
+
+section.hero-section div.text p.text-1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4A25AA;
+    margin-bottom: 32px;
+}
+
+
+section.hero-section div.text p.text-2 {
+    color: #616161;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+section.mentor-section {
+    padding: 0px 96px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;
+}
+
+section.mentor-section p.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
+
+section.mentor-section div.card-container {
+    display: flex;
+    gap: 16px;
+    overflow: auto;
+    padding-bottom: 24px;
+}
+
+section.mentor-section div.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+section.mentor-section div.card-container div.card {
+    min-width: 224px;
+    max-width: 224px;
+    border-radius: .375rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+section.mentor-section div.card-container div.card div.card-body {
+    padding: 16px;
+    padding-bottom: 32px;
+    background-color: white;
+}
+
+section.mentor-section div.card-container div.card div.card-body p.mentor {
+    font-size: 16px;
+    color: #211F26;
+}
+
+section.mentor-section div.card-container div.card div.card-body p.pelajaran {
+    font-size: 12px;
+    color: #616161;
+    margin-top: 12px;
+}
+
+section.testimoni-section {
+    padding: 0px 96px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;
+}
+
+section.testimoni-section p.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
+
+section.testimoni-section div.card-container {
+    display: flex;
+    gap: 16px;
+    overflow: auto;
+    padding-bottom: 24px;
+}
+
+section.testimoni-section div.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+section.testimoni-section div.card-container div.card {
+    min-width: 236px;
+    max-width: 236px;
+    border-radius: .375rem;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: white;
+    height: 220px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+section.testimoni-section div.card-container div.card div.testimoni p.title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #212529;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+section.testimoni-section div.card-container div.card div.testimoni p.lengkap {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #212529;
+}
+
+section.testimoni-section div.card-container div.card div.identitas {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+section.testimoni-section div.card-container div.card div.identitas img {
+    height: 50px;
+    border-radius: 1000px;
+}
+
+section.testimoni-section div.card-container div.card div.identitas div.nama {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.testimoni-section div.card-container div.card div.identitas div.nama p.nama {
+    color: #212529;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+section.testimoni-section div.card-container div.card div.identitas div.nama p.profesi {
+    color: #212529;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+}
+
+section.pertanyaan-section {
+    padding: 0px 96px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;
+}
+
+section.pertanyaan-section p.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
+
+section.pertanyaan-section div.pertanyaan-active {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.375rem;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+}
+
+section.pertanyaan-section div.pertanyaan-active div.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.pertanyaan-section div.pertanyaan-active div.question p {
+    color: #616161;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+section.pertanyaan-section div.pertanyaan-active div.answer p {
+    color: #616161;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+section.pertanyaan-section div.pertanyaan {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.375rem;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+}
+
+section.pertanyaan-section div.pertanyaan div.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.pertanyaan-section div.pertanyaan div.question p {
+    color: #616161;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+p.ask {
+    text-align: center;
+    color: #0C0B0D;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.lihat-semua-pertanyaan {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+div.lihat-semua-pertanyaan p {
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    color: #4A25AA;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
 
