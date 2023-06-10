@@ -1124,5 +1124,158 @@ section.page-nav div.active {
     color: #FAFAFA;
 }
 
+div.container-konten {
+    display: grid;
+    grid-template-columns: 871px 1fr;
+    font-family: 'Roboto', sans-serif;
+    padding: 24px 96px;
+}
+
+article.artikel-section {
+    /* background-color: salmon; */
+}
+
+article.artikel-section p.kategori {
+    font-size: 12px;
+    color: #4A25AA;
+    line-height: 18px;
+    margin-top: 16px;
+}
+
+article.artikel-section div.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.artikel-section div.title p.text {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+article.artikel-section div.share {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+article.artikel-section div.share p {
+    text-decoration: underline;
+    color: #4A25AA;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+article.artikel-section p.body {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    color: #212529;
+}
+
+article.artikel-section div.tags {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+article.artikel-section div.tags span {
+    font-size: 16px;
+    color: #616161;
+}
+
+article.artikel-section div.tags div {
+    text-align: center;
+    padding: 6px 16px;
+    border-radius: 0.25rem;
+    background-color: #E0E0E0;
+}
+
+article.artikel-section div.komentar {
+    color: #4A25AA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    margin-top: 32px;
+}
+
+article.artikel-section div.komentar span.title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+}
+
+article.artikel-section div.komentar div.latest_comment {
+    display: flex;
+    gap: 24px;
+}
+
+article.artikel-section div.komentar div.latest_comment span.text {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+article.artikel-section div.komentar div.latest_comment img {
+    width: 12px;
+    height: 8px;
+}
+
+article.artikel-section div.tulis_komentar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+article.artikel-section div.tulis_komentar div.ava {
+    background-color: #D5A5BF;
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+}
+
+article.artikel-section div.tulis_komentar div.text-area {
+    background: white;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+    border-radius: .375rem;
+    margin-bottom: 24px;
+}
+
+article.artikel-section div.no_comment {
+    width: 400px;
+    box-sizing: border-box;
+    background-color: #E0E0E0;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 24px 48px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+article.artikel-section div.no_comment p.text_2 {
+    font-size: 12px;
+    color: #616161;
+}
+
+article.artikel-section div.no_comment p.text_1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #212529;
+}
+
+
+
 
 
