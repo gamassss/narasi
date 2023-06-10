@@ -1708,11 +1708,330 @@ div.lihat-semua-pertanyaan p {
     font-weight: 500;
 }
 
+section.academy_detail-section {
+    font-family: 'Roboto', sans-serif;
+    /* padding: 0px 96px; */
+}
 
+section.academy_detail-section div.deskripsi-section {
+    display: flex;
+}
 
+section.academy_detail-section div.deskripsi-section div.right-div {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+section.academy_detail-section div.deskripsi-section div.right-div button {
+    padding: 8px 16px;
+    border-radius: 1000px;
+    border: 1px solid #616161;
+    background-color: white;
+    color: #616161;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
 
+section.academy_detail-section div.deskripsi-section div.right-div p.title  {
+    color: #4A25AA;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
 
+section.academy_detail-section div.deskripsi-section div.right-div p.deskripsi {
+    font-size: 14px;
+    color: #757575;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div p.deskripsi span {
+    font-weight: 600;
+    color: #212529;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.harga {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.harga p.discount {
+    color: #9E9E9E;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.harga p.asli {
+    color: #4A25AA;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas {
+    background-color: #FAFAFA;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas button.daftar-btn {
+    background-color: #4A25AA;
+    padding: 12px 20px;
+    border-radius: .375rem;
+    color: #FAFAFA;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 0px;
+    border: none;
+    margin-right: 24px;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
+    border-right: 1px solid #E0E0E0;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item div.tingkat {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item div.tingkat div.indicator {
+    display: flex;
+    gap: 1px;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item div.tingkat div.purple {
+    width: 9px;
+    height: 6px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: #4A25AA;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item div.tingkat div.gray {
+    width: 9px;
+    height: 6px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #D9D9D9;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item div.tingkat p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #051C2C;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item img {
+    height: 22px;
+    width: 22px;
+}
+
+section.academy_detail-section div.deskripsi-section div.right-div div.daftar-kelas div.item-container {
+    display: flex;
+}
+
+section.profil-mentor {
+    padding: 48px 96px;
+    background-color: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+section.profil-mentor p.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
+
+section.profil-mentor div.profil {
+    display: flex;
+}
+
+section.profil-mentor div.profil img {
+    border-radius: .75rem;
+    overflow: hidden;
+}
+
+section.profil-mentor div.profil div.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px 24px;
+}
+
+section.profil-mentor div.profil div.desc p.nama {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0C0B0D;
+    margin-bottom: 4px;
+}
+
+section.profil-mentor div.profil div.desc p.profesi {
+    font-size: 16px;
+    color: #0C0B0D;
+}
+
+section.profil-mentor div.profil div.desc p.ext {
+    font-size: 14px;
+}
+
+section.benefit-section {
+    padding: 48px 96px;
+    background-color: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+section.benefit-section p.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
+
+section.benefit-section div.benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+section.benefit-section div.benefit div.checkmark {
+    height: 24px;
+    width: 24px;
+    border-radius: 48px;
+    background-color: #EBE4FC;
+    display: grid;
+    place-items: center;
+
+}
+
+section.benefit-section div.benefit p {
+    color: #0C0B0D;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+section.result-section {
+    padding: 48px 96px;
+    background-color: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+    /* border-bottom: 1px solid #E0E0E0; */
+}
+
+section.result-section p.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
+
+section.result-section div.materi {
+    width: 100%;
+    background-color: white;
+    border-radius: .375rem;
+    padding: 18px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin-bottom: 24px;
+    padding-bottom: 32px;
+}
+
+section.result-section div.materi p {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFE900;
+}
+
+section.result-section div.materi div.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.result-section div.materi div.title p.text {
+    color: #616161;
+    font-size: 20px;
+}
+
+section.result-section div.materi div.title div.desc {
+    width: 100%;
+    margin-top: 16px;
+}
+
+section.result-section div.materi div.title div.desc p {
+    color: #616161;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+section.result-section div.materi div.title div.desc div.file {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+section.result-section div.materi div.title div.desc div.file p.file-desc {
+    font-weight: 600;
+    font-size: 16px;
+    color: #616161;
+}
+
+div.bagikan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 48px;
+}
+
+div.bagikan p {
+    color: #212529;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+div.bagikan div.sosmed {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+div.bagikan div.sosmed div.sosmed-item {
+    display: grid;
+    place-items: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 72px;
+}
 
 
 
