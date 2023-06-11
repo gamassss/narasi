@@ -2617,12 +2617,12 @@ section.admin_banner-section div.img-container {
     justify-content: center; */
     position: relative;
     overflow:hidden;
-    height: 500px;
+    height: 460px;
 }
 
 section.admin_banner-section div.img-container img.blurred {
     /* width: calc(100%); */
-    height: 500px;
+    height: 460px;
     transform: scale(1.1);
     filter: blur(8px);
     position: absolute;
@@ -2641,14 +2641,15 @@ section.admin_banner-section div.img-container div.profil-admin {
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: 80px;
+    bottom: 40px;
     left: 80px;
+    gap: 8px;
     font-family: 'Roboto', sans-serif;
 }
 
 section.admin_banner-section div.img-container div.profil-admin img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 
 section.admin_banner-section div.img-container div.profil-admin p:nth-child(2) {
@@ -2674,7 +2675,7 @@ section.admin_banner-section div.img-container div.profil-admin p:nth-child(4) {
 section.admin_banner-section div.img-container div.invite {
     position: absolute;
     color: white;
-    bottom: 80px;
+    bottom: 40px;
     right: 80px;
     display: flex;
     gap: 12px;
@@ -2752,7 +2753,7 @@ section.admin_container-section div.dasbor-admin {
 
 section.admin_container-section div.dasbor-admin div {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    padding: 12px 0px;
+    padding: 16px 0px;
 }
 
 section.admin_container-section div.dasbor-admin div:nth-child(1) p {
@@ -2812,3 +2813,247 @@ section.admin_container-section div.dasbor-admin div.icon_icon-admin div.icon-co
     border-bottom: none;
     /* border-radius: 1.5rem; */
 }
+
+section.admin_container-section div.input-informasi {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    padding: 12px 16px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    align-items: center;
+}
+
+section.admin_container-section div.input-informasi img:nth-child(1) {
+    border-radius: 1.5rem;
+}
+
+section.admin_container-section div.input-informasi div.input-field {
+    padding: 12px 16px;
+    border-radius: .5rem;
+    border: none;
+    width: 70%;
+    color: rgba(99, 100, 102, .47);
+    background-color: #F7F7F8;
+    font-size: 14px;
+    /* background-color: red; */
+}
+
+
+section.admin_container-section div.input-informasi img:nth-child(3) {
+    margin-left: auto;
+    margin-right: 2px;
+}
+
+
+section.admin_container-section div.input-informasi span {
+    color: #636466;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 0;
+}
+
+section.admin_container-section div.no-konten {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: 64px;
+}
+
+section.admin_container-section div.no-konten p:nth-child(2) {
+    color: #636466;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section.admin_container-section div.no-konten p:nth-child(3) {
+    font-size: 14px;
+    font-weight: normal;
+    color: #636466;
+}
+
+section.admin_container-section div.right-section {
+    padding: 16px;
+    padding-left: 48px;
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang {
+    border-radius: .25rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    min-height: 280px;
+    margin-bottom: 24px;
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang div.jumlah {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #282829;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang div.kontributor {
+    padding: 6px 20px;
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang div.kontributor div.ruang-creator  {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    /* gap: 12px; */
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang div.kontributor div.ruang-creator img {
+    border-radius: 1.5rem;
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang div.kontributor div.ruang-creator img:nth-child(3) {
+    margin-left: 4px;
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang div.kontributor div.ruang-creator p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #282829;
+    margin-left: 16px;
+}
+
+section.admin_container-section div.right-section div.kontributor-ruang div.kontributor div.ruang-creator span {
+    color: #636466;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+section.admin_container-section div.right-section div.rincian {
+    border-radius: .25rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    min-height: 280px;
+} 
+
+section.admin_container-section div.right-section div.rincian div.title {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #282829;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.admin_container-section div.right-section div.rincian div.no-rincian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+section.admin_container-section div.right-section div.rincian div.no-rincian p:nth-child(2) {
+    color: #636466;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+section.admin_container-section div.right-section div.rincian div.no-rincian p:nth-child(3) {
+    text-align: center;
+    color: #636466;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .025em;
+}
+
+section.admin_container-section div.right-section div.rincian div.no-rincian button.tambah-rincian-btn {
+    margin-top: 64px;
+    margin-bottom: 24px;
+    padding: 12px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 1.5rem;
+    background-color: #195FAA;
+    border: none;
+}
+
+section.admin_container-section div.right-section div.related-ruang {
+    border-radius: .25rem;
+    margin-top: 24px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    min-height: 280px;
+    /* padding-top: 12px; */
+    /* padding-bottom: 32px; */
+} 
+
+section.admin_container-section div.right-section div.related-ruang div.title {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #282829;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section.admin_container-section div.right-section div.related-ruang div.ruang-container {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+section.admin_container-section div.right-section div.related-ruang div.ruang-container div.ruang {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    align-items: start;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+section.admin_container-section div.right-section div.related-ruang div.ruang-container div.ruang img {
+    height: 48px;
+    width: 48px;
+}
+
+section.admin_container-section div.right-section div.related-ruang div.ruang-container div.ruang div.desc-ruang {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 80px;
+    padding-bottom: 16px;
+}
+
+section.admin_container-section div.right-section div.related-ruang div.ruang-container div.ruang div.desc-ruang p:nth-child(1) {
+    color: #282829;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+section.admin_container-section div.right-section div.related-ruang div.ruang-container div.ruang div.desc-ruang p:nth-child(2) {
+    color: #636466;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+section.admin_container-section div.right-section div.related-ruang div.ruang-container div.ruang div.desc-ruang p:nth-child(3) {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
