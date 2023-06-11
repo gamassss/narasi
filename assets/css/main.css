@@ -2373,6 +2373,7 @@ section.forum-section div.mid-section div.result div.isi {
     font-weight: 400;
     line-height: 18px;
 }
+
 section.forum-section div.right-section {
     padding: 0px 48px;
 }
@@ -2404,4 +2405,204 @@ section.forum-section div.right-section div.ads-container div.ads-mark {
     width: 100%;
     background-color: white;
     padding-top: 8px;
+}
+
+section.forum-section div.mid-section div.result-detail {
+    border: 1px solid rgba(0, 0, 0, .2);
+    width: 100%;
+    background-color: #fff;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: .75rem;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+section.forum-section div.mid-section div.result-detail::-webkit-scrollbar {
+    display: none;
+}
+
+section.forum-section div.mid-section div.result-detail div.profil {
+    border: none;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    /* background-color: red; */
+}
+
+section.forum-section div.mid-section div.result-detail div.profil img {
+    border-radius: 1.5rem;
+}
+
+section.forum-section div.mid-section div.result-detail div.profil div.nama  {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    min-height: 100%;
+}
+
+section.forum-section div.mid-section div.result-detail div.profil div.nama p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #282829;
+    margin-bottom: 4px;
+}
+
+section.forum-section div.mid-section div.result-detail div.profil div.nama p:nth-child(2) {
+    font-size: 13px;
+    font-weight: 400;
+    color: #636466;
+}
+
+section.forum-section div.mid-section div.result-detail p.title {
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0.025rem;
+}
+
+section.forum-section div.mid-section div.result-detail div.coba-jawab {
+    width: 100%;
+    /* height: 20px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.forum-section div.mid-section div.coba-jawab img {
+    border-radius: 1.5rem;
+    margin-bottom: 16px;
+}
+
+section.forum-section div.mid-section div.coba-jawab p:nth-child(2) {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+}
+
+section.forum-section div.mid-section div.coba-jawab p:nth-child(3) {
+    margin-bottom: 4px;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 12px;
+    color: #606060;
+}
+
+section.forum-section div.mid-section div.coba-jawab button.jawab-btn {
+    padding: 8px 24px;
+    color: #fff;
+    background-color: #3848DE;
+    border-radius: 1.5rem;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+section.forum-section div.mid-section div.coba-jawab button.jawab-btn:hover {
+    background-color: #142197;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban {
+    width: 100%;
+    padding: 24px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    border-radius: .5rem;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.profil {
+    display: flex;
+    gap: 12px;
+    background-color: white ;
+    align-items: center;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.profil div.identitas {
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.profil div.identitas p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #282829;
+    margin-bottom: 4px;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.profil div.identitas p:nth-child(2) {
+    font-size: 13px;
+    font-weight: 400;
+    color: #636466;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban p.text {
+    margin-top: 16px;
+    color: #282829;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 16px;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote {
+    display: flex;
+    background-color: white;
+    gap: 14px;
+    cursor: pointer;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.upvote-btn {
+    /* padding: 4px 0px; */
+    border-radius: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: #F1F1F1;
+    display: flex;
+    overflow: hidden;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.upvote-btn div.upvote-icon {
+    padding: 4px 10px;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.upvote-btn div.upvote-icon:hover {
+    background-color: #DDD;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.upvote-btn div.downvotef-icon:hover {
+    background-color: #DDD;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.upvote-btn div.upvote-icon p {
+    font-size: 14px;
+    color: #636466;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.upvote-btn div.downvote-icon {
+    padding: 4px 10px;
+    padding-left: 8px;
+}
+
+section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.comment-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: white;
+    font-size: 14px;
+    color: #636466;
 }
