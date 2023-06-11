@@ -2363,6 +2363,7 @@ section.forum-section div.mid-section div.result p.title {
     font-weight: 600;
     font-size: 14px;
     color: black;
+    letter-spacing: 0.025rem;
 }
 
 section.forum-section div.mid-section div.result div.isi {
