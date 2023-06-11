@@ -2606,3 +2606,209 @@ section.forum-section div.mid-section div.result-detail div.jawaban div.upvote d
     font-size: 14px;
     color: #636466;
 }
+
+section.admin_banner-section {
+    font-family: 'Roboto', sans-serif;
+}
+
+section.admin_banner-section div.img-container {
+    /* padding: 0px auto;
+    display: flex;
+    justify-content: center; */
+    position: relative;
+    overflow:hidden;
+    height: 500px;
+}
+
+section.admin_banner-section div.img-container img.blurred {
+    /* width: calc(100%); */
+    height: 500px;
+    transform: scale(1.1);
+    filter: blur(8px);
+    position: absolute;
+    /* filter: drop-shadow(0px -10px 10px black);  */
+}
+
+section.admin_banner-section div.img-container img.foto-asli {
+    position: absolute;
+    /* z-index: 1000; */
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.admin_banner-section div.img-container div.profil-admin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 80px;
+    left: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.admin_banner-section div.img-container div.profil-admin img {
+    height: 150px;
+    width: 150px;
+}
+
+section.admin_banner-section div.img-container div.profil-admin p:nth-child(2) {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+section.admin_banner-section div.img-container div.profil-admin p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+section.admin_banner-section div.img-container div.profil-admin p:nth-child(4) {
+    color: rgba(255, 255, 255, .75);
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+section.admin_banner-section div.img-container div.invite {
+    position: absolute;
+    color: white;
+    bottom: 80px;
+    right: 80px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+section.admin_banner-section div.img-container div.invite div.admin-btn {
+    display: flex;
+    padding: 4px 12px;
+    gap: 4px;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+}
+
+section.admin_container-section {
+    display: grid;
+    grid-template-columns: 871px 1fr;
+    font-family: 'Roboto', sans-serif;
+    padding: 24px 96px;
+    margin-bottom: 128px;
+}
+
+section.admin_container-section nav.forum-nav {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 16px;
+    width: 100%;
+    margin-bottom: 24px;
+    /* width: 100%;
+    color: #9E9E9E;
+    display: flex;
+    gap: 36px;
+    padding-top: 12px 0px; */
+}
+
+section.admin_container-section nav.forum-nav div.nav-container  {
+    width: 100%;
+    color: #9E9E9E;
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    /* padding-top: 12px; */
+    /* padding-bottom: 12px; */
+    border-bottom: 2px solid #E0E0E0;
+}
+
+section.admin_container-section nav.forum-nav div.nav-container span {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+}
+
+section.admin_container-section nav.forum-nav div.nav-container span.active-nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #4A25AA;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+section.admin_container-section div.dasbor-admin {
+    padding: 0px 32px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+section.admin_container-section div.dasbor-admin div {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 12px 0px;
+}
+
+section.admin_container-section div.dasbor-admin div:nth-child(1) p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #282829;
+}
+
+section.admin_container-section div.dasbor-admin div:nth-child(2) p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #195FAA;
+}
+
+section.admin_container-section div.dasbor-admin div:nth-child(3),
+section.admin_container-section div.dasbor-admin div:nth-child(4) {
+    padding-left: 44px;
+}
+
+section.admin_container-section div.dasbor-admin div:nth-child(3) p,
+section.admin_container-section div.dasbor-admin div:nth-child(4) p {
+    color: #282829;
+    font-size: 16px;
+}
+
+section.admin_container-section div.dasbor-admin div.icon_icon-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: none;
+}
+
+section.admin_container-section div.dasbor-admin div.icon_icon-admin div.icon-container {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    font-size: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: #282829;
+}
+
+section.admin_container-section div.dasbor-admin div.icon_icon-admin div.icon-container div {
+    height: 55px;
+    width: 55px;
+    background-color: #F0F0F0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 1.5rem;
+    border-bottom: none;
+    /* border-radius: 1.5rem; */
+}
