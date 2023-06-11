@@ -2059,8 +2059,118 @@ div.bagikan div.sosmed div.sosmed-item {
     border-radius: 72px;
 }
 
+body.forum-page {
+    max-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
 
+section.forum-section {
+    display: grid;
+    grid-template-columns: 320px auto 520px;
+    /* max-height: 100vh; */
+    overflow: hidden;
+}
 
+section.forum-section div:nth-child(1) {
+    max-height: calc(100vh - 104px);
+    /* background-color: cyan; */
+}
 
+section.forum-section div:nth-child(3) {
+    max-height: calc(100vh - 104px);
+    background-color: salmon;
+}
 
+section.forum-section div:nth-child(2) {
+    max-height: calc(100vh - 104px);
+    background-color: pink;
+    overflow: auto;
+}
 
+section.forum-section div:nth-child(2)::-webkit-scrollbar {
+    display: none;
+}
+
+section.forum-section div.left-section {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 8px;
+    min-height: calc(100vh - 104px);
+}
+
+section.forum-section div.left-section div.buat-ruang {
+    display: flex;
+    gap: 8px;
+    max-width: 128px;
+    align-items: center;
+    color: #757575;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #E4E6E6;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all .15s;
+    border-radius: .375rem;
+}
+
+section.forum-section div.left-section div.buat-ruang:hover {
+    background-color: #cacdcd;
+    color: #616161;
+}
+
+section.forum-section div.left-section div.buat-ruang div.plus-container {
+    display: grid;
+    place-items: center;
+    padding: 4px;
+    /* width: 12px;
+    height: 12px; */
+    box-sizing: border-box;
+    background-color: #cdced1;
+    border-radius: .5rem;
+}
+
+section.forum-section div.mid-section {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+section.forum-section div.left-section div.keuangan {
+    display: flex;
+    gap: 8px;
+    max-width: 128px;
+    align-items: center;
+    color: #757575;
+    font-size: 14px;
+    box-sizing: border-box;
+    align-items: start;
+    background-color: #F1F1F1;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all .15s;
+    border-radius: .375rem;
+}
+
+section.forum-section div.left-section div.keuangan:hover {
+    background-color: #cacdcd;
+    color: #616161;
+}
+
+section.forum-section div.left-section div.keuangan div.img-container {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    background-color: cyan;
+    border-radius: .375rem;
+}
+
+section.forum-section div.left-section div.keuangan div.img-container img {
+    height: 20px;
+    width: 20px;
+}
+
+section.forum-section div.left-section div.keuangan span {
+    font-weight: 400;
+}
