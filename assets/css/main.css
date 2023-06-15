@@ -2086,7 +2086,7 @@ section.forum-section div:nth-child(2) {
 section.forum-section div:nth-child(3) {
     max-height: calc(100vh - 104px);
     /* background-color: salmon; */
-    background-color: #F1F1F1;
+    /* background-color: #F1F1F1; */
 }
 
 
@@ -2375,10 +2375,12 @@ section.forum-section div.mid-section div.result div.isi {
 }
 
 section.forum-section div.right-section {
-    padding: 0px 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: #F1F1F1;
 }
 section.forum-section div.right-section div.ads-container {
-    margin: 0px 24px;
+    margin-right: 24px;
     margin-left: 0px;
     background-color: #fff;
     display: flex;
@@ -3046,14 +3048,298 @@ section.admin_container-section div.right-section div.related-ruang div.ruang-co
     font-weight: normal;
 }
 
+section.event-section {
+    background-color: #F1F1F1;
+    padding: 32px 96px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 80px;
+}
 
+section.event-section p.sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+    color: #4A25AA;
+    margin-bottom: 24px;
+}
 
+section.event-section div.event-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-gap: 10px; */
+    column-gap: 16px;
+    row-gap: 20px;
+}
 
+section.event-section div.event-container div.event {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    overflow: hidden;
+}
 
+section.event-section div.event-container div.event img {
+    width: 100%;
+}
 
+section.event-section div.event-container div.event div.desc-event {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
 
+section.event-section div.event-container div.event div.desc-event p:nth-child(1) {
+    color: #4A25AA;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 16px;
+}
 
+section.event-section div.event-container div.event div.desc-event p:nth-child(2) {
+    line-height: 24px;
+    font-size: 16px;
+    color: #616161;
+    margin-bottom: 6px;
+}
 
+section.event-section div.event-container div.event div.desc-event p:nth-child(3) {
+    line-height: 18px;
+    color: #616161;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
 
+section.event-section div.event-container div.event div.desc-event div.waktu-event {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #757575;
+    margin-bottom: 16px;
+}
+
+section.event-section div.event-container div.event div.desc-event div.waktu-event img {
+    height: 16px;
+    width: 15px;
+    /* align-self: center; */
+}
+
+section.event-section div.event-container div.event div.desc-event div.waktu-event p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    align-self: center;
+    line-height: 16px;
+}
+
+section.event-section div.event-container div.event div.desc-event div.lokasi-event {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #757575;
+    margin-bottom: 14px;
+}
+
+section.event-section div.event-container div.event div.desc-event div.lokasi-event img {
+    height: 16px;
+    width: 15px;
+    /* align-self: center; */
+}
+
+section.event-section div.event-container div.event div.desc-event div.lokasi-event p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    align-self: center;
+    line-height: 16px;
+}
+
+section.event-section div.event-container div.event div.desc-event div.daftar-event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.event-section div.event-container div.event div.desc-event div.daftar-event p {
+    color: #616161;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+section.event-section div.event-container div.event div.desc-event div.daftar-event button.selesai-event {
+    padding: 6px 18px;
+    border-radius: .5rem;
+    background-color: #E0E0E0;
+    color: #9E9E9E;
+    font-size: 12px;
+    border: none;
+}
+
+.daftar-event-btn {
+    background-color: #4A25AA;
+    color: white;
+    padding: 6px 18px;
+    border-radius: .5rem;
+    font-size: 12px;
+    border: none;
+}
+
+section.event-section div.lihat-event-lainnya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    gap: 14px;
+} 
+
+section.event-section div.lihat-event-lainnya span {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+    /* line-height: 18px; */
+    color: #4A25AA;
+}
+
+section.event-section div.lihat-event-lainnya img {
+    height: 15px;
+    width: 15px;
+}
+
+section.timeline-section {
+    background: linear-gradient(to left, #4A25AA, #B60F7F);
+    /* height: 500px; */
+    font-family: 'Roboto', sans-serif;
+    padding: 48px 96px;
+}
+
+section.timeline-section div.see_all {
+    color: #FFE900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+section.timeline-section div.see_all span.title {
+    font-weight: 700;
+    font-size: 20px;
+    border-left: 9px solid #FFE900;
+    padding-left: 28px;
+}
+
+section.timeline-section div.see_all span.lihat_semua {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+section.timeline-section div.pilih-tahun {
+    display: flex;
+    justify-content: end;
+    gap: 14px;
+    align-items: center;
+}
+
+section.timeline-section div.pilih-tahun div.navi img {
+    width: 10px;
+    height: 17px;
+}
+
+section.timeline-section div.pilih-tahun div.navi {
+    border: 1px solid #FFEE39;
+    border-radius: .5rem;
+    padding: 6px 10px;
+}
+
+section.timeline-section div.pilih-tahun span {
+    color: #FFEE39;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section.timeline-section div.timeline-event-container {
+    display: flex;
+    margin-top: 52px;
+    gap: 20px;
+}
+
+section.timeline-section div.timeline-event-container div.event-card {
+    flex: 1;
+    border-radius: .5rem;
+    overflow: hidden;
+    border: none;
+}
+
+section.timeline-section div.timeline-event-container div.event-card img {
+    width: 100%;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline {
+    padding: 16px;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline p:nth-child(1) {
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    letter-spacing: .025em;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline p:nth-child(2) {
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.desc {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.desc p {
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.waktu-lokasi {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.waktu-lokasi div.waktu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.waktu-lokasi div.waktu span {
+    line-height: 15px;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.waktu-lokasi div.lokasi {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.waktu-lokasi div.lokasi img  {
+    height: 15px;
+    width: 15px;
+}
+
+section.timeline-section div.timeline-event-container div.event-card div.event-desc-timeline div.waktu-lokasi div.lokasi span {
+    line-height: 15px;
+}
 
 
