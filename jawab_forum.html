@@ -11,10 +11,54 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Ruang bersama untuk bertukar ide dan gagasan | Narasi TV</title>
 </head>
 
 <body class="forum-page">
+
+    <section class="tanya-modal-container" style="display: none;" id="modal-overlay">
+        <div class="modal" id="modal-content">
+            <div class="close-modal">
+                <img src="assets/img/close-modal.svg" alt="" id="close-modal-btn">
+            </div>
+            <nav class="forum-nav">
+                <div class="nav-container">
+                    <span class="active-nav" style="color: #282829;">Add Question</span>
+                    <span>Create Post</span>
+                    <!-- <span>Topik Terkait</span> -->
+                </div>
+            </nav>
+            <div class="ask-tips">
+                <div class="tips-container">
+                    <p>Tips on getting good answers quickly</p>
+                    <li>Make sure your question has not been asked already</li>
+                    <li>Keep your question short and to the point</li>
+                    <li>Double-check grammar and spelling</li>
+                </div>
+            </div>
+            <div class="set-visibility">
+                <img src="assets/img/ava-r.png" alt="">
+                <img src="assets/img/play-icon.svg" alt="">
+                <div class="public">
+                    <img src="assets/img/public.svg" alt="">
+                    <span>Public</span>
+                    <img src="assets/img/arrow-down.png" alt="">
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="text" class="question-asked"
+                    placeholder='Awali pertanyaan anda dengan "Apa", "Bagaimana", "Mengapa", dll.'>
+            </div>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas omnis possimus facilis accusantium sunt? Animi minima, illum facere a magnam illo! Quos veniam quo voluptatibus, fugit, dignissimos incidunt omnis voluptates ipsum molestias facilis labore soluta numquam, eveniet minima quae ullam mollitia earum magnam non consequatur quibusdam obcaecati deserunt! Tempora ut perferendis provident, accusantium velit officia, earum nemo praesentium vel ducimus fugit distinctio dolores animi repudiandae totam ipsa molestias. Id ea a laborum perspiciatis. Tempore ad labore aperiam voluptates delectus quos maiores, mollitia minus dolores ducimus sint at! Cumque sequi, molestiae odio animi quas fugiat soluta, aliquid magni culpa distinctio sunt!</p> -->
+            <div class="add-question">
+                <span>Cancel</span>
+                <button id="submit-question-btn">Add question</button>
+            </div>
+        </div>
+    </section>
     <!-- Header Section -->
     <section class="header-section">
         <!-- logo -->
@@ -137,7 +181,7 @@
                     </div>
                     <div class="field">
                         <img src="assets/img/ava-forum.png" alt="">
-                        <div class="input">
+                        <div class="input" id="open-modal-btn">
                             <p>Apa yang ingin anda tanyakan atau bagikan?</p>
                         </div>
                     </div>
@@ -153,7 +197,7 @@
             </nav>
 
             <!-- Beranda -->
-            <div class="result">
+            <div class="result" onclick="window.location.href='jawab_forum_detail.html'" style="cursor: pointer;">
                 <div class="profil">
                     <img src="assets/img/jawab1.png" alt="">
                     <div class="nama">
@@ -171,7 +215,8 @@
                         <p>Pelajar SMA · 2thn</p>
                     </div>
                 </div>
-                <p class="title">Untuk remaja 18 tahun, mana lebih baik, investasi saham atau reksadana? Bagaimana langkah-langkah dalam berinvestasi?</p>
+                <p class="title">Untuk remaja 18 tahun, mana lebih baik, investasi saham atau reksadana? Bagaimana
+                    langkah-langkah dalam berinvestasi?</p>
             </div>
             <div class="result">
                 <div class="profil">
@@ -181,7 +226,8 @@
                         <p>Belajar Bahasa Prancis · Penerjemah · 2thn</p>
                     </div>
                 </div>
-                <p class="title">Jika investasi terbaik hanya memberi anda 10-15% per tahun, bagaimana anda menjadi kaya dengan berinvestasi?</p>
+                <p class="title">Jika investasi terbaik hanya memberi anda 10-15% per tahun, bagaimana anda menjadi kaya
+                    dengan berinvestasi?</p>
             </div>
             <div class="result">
                 <div class="profil">
@@ -206,6 +252,36 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.question-asked').on('input', function () {
+                let inputValue = $(this).val().trim();
+
+                if (inputValue === '') {
+                    $('section.tanya-modal-container div.modal div.add-question button').removeClass('active-add-question-btn');
+                    console.log('kosong')
+                    $('#submit-question-btn').css('background-color', '#96B4FF');
+                    $('#submit-question-btn').css('cursor', 'unset');
+                } else {
+                    $('section.tanya-modal-container div.modal div.add-question button').addClass('active-add-question-btn');
+                    console.log('terisi')
+                    $('#submit-question-btn').css('background-color', '#1A5AFF');
+                    $('#submit-question-btn').css('cursor', 'pointer');
+                }
+            });
+
+            $('#open-modal-btn').click(function () {
+                $('#modal-overlay').fadeIn(150);
+            });
+
+            $('#close-modal-btn').click(function () {
+                $('#modal-overlay').fadeOut(100);
+            });
+        });
+
+    </script>
 </body>
 
 </html>

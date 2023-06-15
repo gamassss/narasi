@@ -2084,6 +2084,7 @@ div.bagikan div.sosmed div.sosmed-item {
 body.forum-page {
     max-height: 100vh;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 section.forum-section {
@@ -2602,6 +2603,7 @@ section.forum-section div.mid-section div.result-detail div.jawaban div.upvote d
     display: flex;
     gap: 8px;
     align-items: center;
+    transition: all .3s;
 }
 
 section.forum-section div.mid-section div.result-detail div.jawaban div.upvote div.upvote-btn div.upvote-icon:hover {
@@ -3366,12 +3368,15 @@ section.timeline-section div.timeline-event-container div.event-card div.event-d
 }
 
 section.tanya-modal-container {
-    height: 100vh; /* 100% tinggi viewport */
-    width: 100vw; /* 100% lebar viewport */
+    height: 100vh;
+    width: 100vw;
     background-color: rgba(0, 0, 0, .7);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: grid;
     place-items: center;
+    z-index: 99999;
 }
 
 section.tanya-modal-container div.modal {
@@ -3386,6 +3391,7 @@ section.tanya-modal-container div.modal {
 section.tanya-modal-container div.modal div.close-modal {
     display: flex;
     padding: 16px 12px;
+    cursor: pointer;
 }
 
 section.tanya-modal-container nav.forum-nav {
@@ -3421,6 +3427,10 @@ section.tanya-modal-container nav.forum-nav div.nav-container span {
     font-size: 16px;
     flex: 1;
     text-align: center;
+}
+
+section.tanya-modal-container nav.forum-nav div.nav-container span:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 section.tanya-modal-container nav.forum-nav div.nav-container span.active-nav {
@@ -3473,6 +3483,7 @@ section.tanya-modal-container div.set-visibility div.public {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 section.tanya-modal-container div.set-visibility img:nth-child(1) {
