@@ -394,6 +394,39 @@ section.populer-section div.container div.left-item div.list-video-wrapper div.l
     cursor: pointer;
 }
 
+section.pilihan-program-section {
+    margin: 16px 0px;
+}
+
+section.pilihan-program-section div.pilihan-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 96px;
+}
+
+section.pilihan-program-section div.pilihan-container div.pilihan-items {
+    border-radius: 1.5rem;
+    background-color: #FAFAFA;
+    border: 1px solid #E0E0E0;
+    padding: 12px 24px;
+    color: #616161;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+section.pilihan-program-section div.pilihan-container div.pilihan-items:hover {
+    color: white;
+    background-color: #6242B4;
+}
+
+section.pilihan-program-section div.pilihan-container div.pilihan-items.pilihan-active {
+    color: white;
+    background-color: #6242B4;
+}
+
 section.pilihan-section.pilihan-landing-page {
     padding: 0px 96px;
     background-color: #FFFFFF;
@@ -2316,6 +2349,7 @@ div.mid-section nav.forum-nav div.nav-container span {
     padding-left: 16px;
     padding-right: 16px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 div.mid-section nav.forum-nav div.nav-container span.active-nav::after {
